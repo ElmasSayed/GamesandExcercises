@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Programming Excercises</title>
+        <!-- bootstrap -->
+		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh2u" crossorigin="anonymous"> -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- JQ -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  
+  <body class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!-- <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <!-- <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse">
+        <ul class="ulbackground navbar-nav">
+          <li class="navButton active">
+            <a class="nav-link" href="#">Elementary</a>
+          </li>
+          <li class="navButton active">
+            <a class="nav-link" href="#listStrings">Lists & Strings</a>
+          </li>
+          <li class="navButton">
+            <a class="nav-link" href="intermediate.html">Intermediate</a>
+          </li>
+          <li class="navButton">
+            <a class="nav-link" href="#">Advanced</a>
+          </li>
+          <li class="navButton">
+            <a class="nav-link" href="#">GUI</a>
+          </li>
+          <li class="navButton">
+            <a class="nav-link" href="#">Open Ended</a>
+          </li>
+          <li class="navButton" style="float:right;">
+            <a class="nav-link" href="http://elmassayed.github.io/ElmasSayed/" target="_blank">Elmas Sayed</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- elementary exc -->
+  <div>  
+    <h3>Elementary level Excercises</h3>
+    <h4 class="excercise">1). Write a program that prints ‘Hello World’ to the screen.</h4>
+    <div>
+      <button id="btn1" type="submit" class="btn btn-success">Greet All</button>
+      <div id="greet1" class="display"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------- -->
+    <h4 class="excercise">2). Write a program that asks the user for her name and greets her with her name.</h4>
+    <div>
+      <input id="exc2" class="input" type="text" name="name" value="" placeholder="Enter Name">
+      <button id="btn2" type="submit" class="btn btn-success">Click Me!</button>
+      <div id="greet2" class="display"></div>
+    </div>
+    <!-- ------------------------------------------------------------------------------- -->
+    <h4 class="excercise">3). Modify the previous program such that only the users Alice and Bob are greeted with their names.</h4>
+    <div>
+      <input id="exc3" class="input" type="text" name="name" value="" placeholder="Enter Name ">
+      <button id="btn3" type="submit" class="btn btn-success">Click Me!</button>
+      <div id="greet3" class="display"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+    <h4 class="excercise">4). Write a program that asks the user for a number n and prints the sum of the numbers 1 to n </h4>
+    <div>
+      <input id="exc4" class="input" type="text" name="name" value="" placeholder="Enter a number">
+      <button id="btn4" type="submit" class="btn btn-success">Click Me!</button>
+      <div id="showNumber4" class="display" ></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------ -->
+    <h4 class="excercise">  5). Modify the previous program such that only multiples of three or five are considered in the sum, e.g. 3, 5, 6, 9, 10, 12, 15 for n=17</h4>
+    <div>
+      <input id="exc5" class="input" type="text" name="name" value="" placeholder="Enter a number">
+      <button id="btn5" type="submit" class="btn btn-success">Click Me!</button>
+      <div id="showNumber5" class="display"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+    <h4 class="excercise"> 6). Write a program that asks the user for a number n and gives him the possibility to choose between computing the sum and computing the product of 1,…,n.</h4>
+    <div>
+      <input id="exc6" class="input" type="text" name="name" value="" placeholder="Enter a number"><br>
+      <button id="btnSum6" type="submit" class="btn btn-success">Sum</button>
+      <div id="showNumberSum6" class="display"></div>
+      <button id="btnProduct6" type="submit" class="btn btn-success">Product</button>
+      <div id="showNumberProduct6" class="display"></div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <h4 class="excercise"> 7). Write a program that prints a multiplication table for numbers up to 12.
+    <div>
+      <input id="exc7" class="input" type="text" name="name" value="" placeholder="Enter a number"><br>
+      <button id="btnProduct7" type="submit" class="btn btn-success">Product</button>
+      <button id="clear7" type="submit" class="btn btn-success">Clear</button>
+      <div>Multiplication table of <span id="number7" style="font-weight: bold; font-size: 25px;"></span></div>
+      <div id="showNumberProduct7" class="displayBox"></div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------- -->
+
+    <h4 class="excercise"> 7a). Write a program that prints a multiplication table for numbers up to 12 for Even numbers.
+    <div>
+      <input id="exc7a" class="input" type="text" name="name" value="" placeholder="Enter a number"><br>
+      <button id="btnProduct7a" type="submit" class="btn btn-success">Product</button>
+      <button id="clear8" type="submit" class="btn btn-success">Clear</button>
+      <div>Multiplication table of <span id="number7a" style="font-weight: bold; font-size: 25px;"></span></div>
+      <div id="showNumberProduct7a" class="displayBox" ></div>
+    </div>
+
+    <!-- -------------------------------------------------------------- -->
+
+    <h4 class="excercise"> 8). Write a program that prints all prime numbers. (Note: if your programming language does not support arbitrary size numbers, printing all primes up to the largest number you can easily represent is fine too.)</h4>
+    </h3> Pending</h3>
+    <div>
+      <button id="exc8" type="submit" class="btn btn-success">Generate all Prime Numbers</button>
+      <div id="showPrimeNumber8" class="displayBox"></div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------- -->
+
+    <h4 class="excercise">9). Write a guessing game where the user has to guess a secret number. After every guess the program tells the user whether their number was too large or too small. At the end the number of tries needed should be printed. I counts only as one try if they input the same number multiple times consecutively.</h4>
+    <h4>Guess the number Game</h4>
+    <div>
+      <input id="exc9" class="input" type="text" name="name" value="" placeholder="Guess the number under 10">
+      <button id="game9" type="submit" class="btn btn-success">Play</button>   
+      <div id="showGame9" class="display"></div>
+      <div>Your guess tries: <div id="counter9" class="display"> </div> </div>
+    </div>
+
+  <!-- --------------------------------------------------------------------------------------- -->
+
+    <h4 class="excercise">10). Write a program that prints the next 20 leap years.</h4>
+    <div>
+      <button id="exc10" type="submit" class="btn btn-success">Show next 20 Leap Year</button>
+      <div id="leapYear10" class="display"></div>
+    </div>
+  <!-- ------------------------------------------------------------------- -->
+
+    <h4 class="excercise">11). Write a program that computes 4\cdot \sum_{k=1}^{10^6} \frac{(1)^{   k+1}}{2k1}= 4\cdot(11/3+1/51/7+1/91/11\ldots)
+    </h3> Pending</h3>
+    <div> </div>
+  <!-- ----------------------------------------------------------------- -->
+  </div>
+<!-- ------------------  LISTS AND LINKS -------------------------------------------- -->
+  <div>
+    <h3 style="text-align: center;" ><a name="listStrings"> Lists, Strings</a></h3>
+  <!-- excercise 12a -->
+    <h4 class="excercise">12)a. Write a function that returns the largest element in a list.</h4>
+    <button id="exc12a" type="submit" class="btn btn-success">Create list of random numbers</button>
+    <div>Show the largest number from each array:
+      <div id="array12a" class="display"></div>
+    </div>  
+    <div>The largest element number is:
+      <div id="largestNumber12a" class="display"></div>
+    </div>
+  
+  <!-- --------------------------------------------------------------------------- -->
+
+  <!-- excercise 12b -->
+    <h4 class="excercise">12)b. Largest number from Multiple Arrays.</h4>
+    <p>Array list:  [1,34,77,83,63], [11,45,73, 68, 0, 878, 989, 89, 5], [6,10,88,6788, 7223], [101, 233,647,87, 43] </p>
+    <button id="exc12b" type="submit" class="btn btn-success">Show largest from each array</button>
+    <div>Largest number from each array:
+      <div id="largestNum12b" class="display"></div>
+    </div>  
+    <div>Largest number from All arrays:
+      <div id="mainLargestNumber12b" class="display"></div>
+    </div>
+
+<!-- --------------------------------------------------------------------------- -->
+
+    <!-- excercise 13 -->
+      <h4 class="excercise">13. Write function that reverses a list, preferably in place.</h4>
+      <button id="exc13" type="submit" class="btn btn-success">Click for 10 random numbers</button> 
+      <div>Show the random numbers:
+        <div id="array13" class="display"></div> 
+      </div>
+      <div>
+        <button id="exc13a" type="submit" class="btn btn-success">Reverse the list</button> 
+        <div id="reverseList13" class="display"></div>
+      </div>
+    
+  <!-- --------------------------------------------------------------------------  13 ends-->
+  <!-- excercise 14 -->
+      <h4 class="excercise"> 14. Write a function that checks whether an element occurs in a list.</h4>
+pending
+
+
+<!-- --------------------------------------------------------------------------- 14 ends -->
+  <!-- excercise 15 -->
+      <h4 class="excercise"> 15. Write a function that returns the elements on odd positions and even positions in a list.</h4>
+      <p>Array list:  [Jessica, John, Bob, Ann, Sam, Noah, Kelly, Peter, Patrick, Kim, Leam, Jack, Wez, Nal, Tim, Matt, Liz, Ty, Bestie, Haily, Cammy, Diz, Yeao, Trey]</p>
+      <div>
+        <button id="exc15a" type="submit" class="btn btn-success"> Odd positions elements</button> 
+        <div id="odd15" class="display"></div>
+      </div>
+      <div>
+        <button id="exc15b" type="submit" class="btn btn-success"> Even positions elements</button> 
+        <div id="even15" class="display"></div>
+      </div>
+
+<!-- ---------------------------------------------------------------------------- 15 ends -->
+
+  <!-- excercise 16 -->
+      <h4 class="excercise"> 16. Write a function that computes the running total of a list.</h4>
+      <div>
+        <button id="exc16a" type="submit" class="btn btn-success"> Add Numbers</button> 
+        <div id="number16a" class="display"></div>
+      </div>
+      <div>
+        <div id="runningTotal16b" class="display"></div>
+      </div>
+ 
+<!-- ---------------------------------------------------------------------------- 16 ends -->
+
+ <!-- excercise 17 -->
+      <h4 class="excercise">17. Write a function that tests whether a string is a palindrome.</h4>
+      <div>
+        <button id="exc17" type="submit" class="btn btn-success"> Enter a word or sentence to check</button> 
+        <!-- <input id="exc1" class="input" type="text" name="name" value="" placeholder="Guess the number under 10"> -->
+        <div id="palindrome17a" class="display"></div>
+      </div>
+      <div>
+        <div id="palindrome17b" class="display"></div>
+      </div>
+<!-- ---------------------------------------------------------------------------- 17 ends -->
+
+    <!-- excercise 18 -->
+      <h4 class="excercise">18. Write function to show departments and employees with their salaries. Show total department salaries and Grand total of salaries to all employees from information below.</br>
+        Accounts: Tori $45000</br>
+        Accounts: Andrea $50000</br>
+        Information Technology: Shaq $150000</br>
+        Information Technology: Luther $110000</br>
+        Information Technology: Hendry $110000</br>
+        Human Resource: Renee $100000</br>
+        Human Resource: Bobby $75000</br>
+        Administration: Danielle $60000</br>
+        Administration: Lee $50000
+      </h4>
+      <div>
+        <button id="exc18a" type="submit" class="btn btn-success"> Show departments</button> 
+        <button id="clear18a" type="submit" class="btn btn-success"> Clear box</button> 
+        <div id="dept18" class="display"></div>
+      </div>
+       <div>
+        <button id="exc18b" type="submit" class="btn btn-success"> Show Employees and their Salaries</button> 
+        <button id="clear18b" type="submit" class="btn btn-success"> Clear box</button> 
+        <div id="emp18a" class="displayBox"><strong>Employees and their salaries in every department:</strong><br></div>
+        <div id="emp18b" class="displayBox"><strong>Total Salaries paid in each department:</strong><br></div>
+        <div id="emp18c" class="displayBox"><strong>Grand Total Salaries paid to all employees:</strong><br></div>
+      </div>
+
+<!-- ---------------------------------------------------------------------------- 18 ends -->
+
+<h4 class="excercise">19. Write function to show store books and their genre with their cost. Show total genre cost and Grand total of books from information below.</br>
+        Accounting: Payyroll magic $45.00</br>
+        Accounting: Tax Truth $58.99</br>
+        Information Technology: JS Handbook $150.00</br>
+        Information Technology: HTML byte $51.00</br>
+        Information Technology: Python handbook $110.00</br>
+        Human Resource: Employeee circle $56.00</br>
+        Human Resource: HR Rights $75.00</br>
+        Administration: Cost Control $60.00</br>
+        Administration: Mechcanic Math $50.00</br>
+        Childrens book: Especially Flying Out $10.00</br>
+        Childrens book: The Lion $8.00</br>
+        Childrens book: Spinning Magical Chair $8.00</br>
+        Childrens book: Raining Candies $18.00</br>
+      </h4>
+      <div>
+        <button id="exc19a" type="submit" class="btn btn-success"> Show Genres</button> 
+        <button id="clear19a" type="submit" class="btn btn-success"> Clear box</button> 
+        <div id="dept19" class="display"></div>
+      </div>
+       <div>
+        <button id="exc19b" type="submit" class="btn btn-success"> Show books and cost</button> 
+        <button id="clear19b" type="submit" class="btn btn-success"> Clear box</button> 
+        <div id="emp19a" class="displayBox"><strong>Books and their cost in every genre:</strong><br></div>
+        <div id="emp19b" class="displayBox"><strong>Total cost under each genre:</strong><br></div>
+        <div id="emp19c" class="displayBox"><strong>Grand Total Cost paid for all books:</strong><br></div>
+      </div>
+
+<!-- --------------------------------------------------------------------------------- -->
+         <!-- 20. fizzbuzz -->
+    <h4 class="excercise">20) FIZZ BUZZ: Write a script that prints the numbers 1 to 50 in the console. But for multiples of three, print `Fizz` instead of the number. For multiples of five, print `Buzz`. For numbers which are multiples of both three and five, print `FizzBuzz`.</h4>
+    <button id="exc20" type="submit" class="btn btn-success"> Fizz Buzz click</button> 
+    <button id="clear20" type="submit" class="btn btn-success"> Clear box</button> 
+    <div id="fizzbuzz" class="displayBox"><br></div>
+
+<!-- --------------------------------------------------------------------------------- -->
+         <!-- 21. While loop -->
+    <h4 class="excercise"> 21)Write three functions that compute the sum of the numbers in a list: using a forloop, a whileloop and recursion. </h4>
+    <div>
+      <button id="exc21" type="submit" class="btn btn-success"> Enter 5 numbes</button> 
+      <div id="numbers21" class="display"></div>
+    </div>
+    <button id="exc21a" type="submit" class="btn btn-success"> Loop Click</button> <div id="loop" class="displaySmall"></div>
+    <button id="exc21b" type="submit" class="btn btn-success"> While Loop Click</button> <div id="whileLoop" class="displaySmall"><br></div>
+    <button id="exc21c" type="submit" class="btn btn-success"> Recursion Click</button> <div id="recursion" class="displaySmall"><br></div>
+
+<!-- --------------------------------------------------------------------------------- -->
+
+
+  <!-- -------------------------------------------------------------------------- -->
+  </div> <!-- list end -->
+  <!-- -------------------------------------------------------------------------- -->
+    <!-- JS -->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="liststring.js"></script>
+  </body>
+  </html>

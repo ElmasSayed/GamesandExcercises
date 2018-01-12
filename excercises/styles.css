@@ -1,0 +1,92 @@
+.ulbackground{
+	background-color: darkred;
+	width: 93%;
+	padding-top: 16px;
+	padding-bottom:16px;
+	padding-right: 0px;
+	padding-left: 10px;
+	position:fixed;
+	top:0px;
+}
+.navButton {
+	display:inline-block;
+	padding:0px;
+	font-size: 25px;
+	margin-left: 30px;
+}
+
+.nav-link{
+	padding:20px 8px;
+	text-decoration: none;
+	color: white;
+}
+
+.nav-link:hover{
+	background-color: gray;
+}
+
+h3{
+	background-color: gray;
+	/*font-size: 30px;*/
+	color:white;
+	padding:15px;
+	margin-top: 100px;
+}
+
+h2{
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+
+input{
+	padding-left: 30px;
+	font-size: 20px;
+	margin-left: 80px;
+}
+button{
+	margin: 5px;
+}
+
+.container{
+	 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+	margin:20px 50px 20px 50px ;
+	/*font-size: 25px;*/
+}
+.excercise{
+	margin-top: 20px;
+	margin-bottom: 6px;
+}
+.display{
+	border: solid 1px gray; 
+	width: 80%;
+	height: 30px;
+	margin-top:4px;
+	margin-bottom: 8px;
+	margin-left: 50px;
+	font-size: 23px;
+	padding-left: 40px;
+}
+
+.displayBox{
+	font-size: 20px; 
+	margin-top:15px;
+	padding-left:25px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:left; 
+	min-height: 100%; 
+	min-width: 200px; 
+	border: solid 1px gray;
+}
+
+.displaySmall{
+	border: solid 1px gray; 
+	width: 30%;
+	height: 30px;
+	margin-top:4px;
+	margin-bottom: 8px;
+	margin-left: 50px;
+	font-size: 23px;
+	padding-left: 40px;
+}
